@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        AposBot
-// @namespace   AposBot
+// @name        AgarBot
+// @namespace   AgarBot
 // @include     http://agar.io/
-// @version     3.34
+// @version     3.35
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
@@ -44,10 +44,10 @@ $.get('https://raw.githubusercontent.com/Apostolique/Agar.io-bot/master/bot.user
 
 
 
-console.log("Running Apos Bot!");
+console.log("Running Agar Bot!");
 (function(f, g) {
     var splitDistance = 710;
-    console.log("Apos Bot!");
+    console.log("Agar Bot!");
 
     if (f.botList == null) {
         f.botList = [];
@@ -58,7 +58,7 @@ console.log("Running Apos Bot!");
     f.botList.push(["AposBot " + GM_info.script.version, findDestination]);
 
     var bList = g('#bList');
-    g('<option />', {value: (f.botList.length - 1), text: "AposBot"}).appendTo(bList);
+    g('<option />', {value: (f.botList.length - 1), text: "AgarBot"}).appendTo(bList);
 
     //Given an angle value that was gotten from valueAndleBased(),
     //returns a new value that scales it appropriately.
